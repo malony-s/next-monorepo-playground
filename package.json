@@ -1,0 +1,12 @@
+{
+  "name": "next-monorepo-playground",
+  "version": "0.0.1",
+  "workspaces": [
+    "apps/*",
+    "shared/*"
+  ],
+  "repository": "git@github.com:malony-s/next-monorepo-playground.git",
+  "author": "beomsoo park <loki@villain-market.com>",
+  "license": "MIT",
+  "packageManager": "yarn@3.2.2"
+}
