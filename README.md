@@ -1,0 +1,3 @@
+# next-monorepo-playground
+
+initialize
