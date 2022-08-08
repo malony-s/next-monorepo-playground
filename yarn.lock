@@ -2122,6 +2122,7 @@ __metadata:
   resolution: "@shared/ui@workspace:shared/ui"
   dependencies:
     "@babel/core": ^7.18.10
+    "@emotion/is-prop-valid": ^1.2.0
     "@emotion/react": ^11.10.0
     "@emotion/styled": ^11.10.0
     "@mdx-js/react": ^1.6.22
@@ -2137,6 +2138,7 @@ __metadata:
     "@types/react": ^18.0.17
     "@types/react-dom": ^18.0.6
     babel-loader: ^8.2.5
+    csstype: ^3.1.0
     react: ^17.0.2
     react-dom: ^17.0.2
     require-from-string: ^2.0.2
@@ -5919,7 +5921,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csstype@npm:^3.0.2":
+"csstype@npm:^3.0.2, csstype@npm:^3.1.0":
   version: 3.1.0
   resolution: "csstype@npm:3.1.0"
   checksum: 644e986cefab86525f0b674a06889cfdbb1f117e5b7d1ce0fc55b0423ecc58807a1ea42ecc75c4f18999d14fc42d1d255f84662a45003a52bb5840e977eb2ffd
