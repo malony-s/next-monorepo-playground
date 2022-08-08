@@ -1,0 +1,8 @@
+{
+  "name": "@shared/api",
+  "packageManager": "yarn@3.2.1",
+  "scripts": {
+    "example": "scripts/gen.js https://petstore.swagger.io/v2/swagger.json",
+    "open-api": "scripts/gen.js"
+  }
+}
