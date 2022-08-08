@@ -3,7 +3,7 @@ import React from "react";
 import Input from "./index";
 
 export default {
-  title: "Example/Input",
+  title: "Components/Input",
   component: Input,
   argTypes: {
     // backgroundColor: { control: "color" },
@@ -12,13 +12,7 @@ export default {
 
 const Template = (args) => <Input {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
-  primary: true,
-  defaultValue: "",
-};
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: "Button",
+export const Index = Template.bind({});
+Index.args = {
+  defaultValue: "test",
 };
