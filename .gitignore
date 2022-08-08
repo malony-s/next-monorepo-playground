@@ -1,0 +1,17 @@
+# Yarn
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# tmp
+**/tmp
+
+# # next
+**/.next
+**/.swc/
+# # node_modules
+**/node_modules
