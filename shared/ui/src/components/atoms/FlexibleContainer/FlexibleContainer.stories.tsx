@@ -1,3 +1,4 @@
+import { Story } from '@storybook/react';
 import React from 'react';
 
 import FlexibleContainer, {
@@ -26,7 +27,9 @@ export default {
   },
 };
 
-const Template = (args: FlexibleContainerProps) => (
+const Template: Story<FlexibleContainerProps> = (
+  args: FlexibleContainerProps,
+) => (
   <FlexibleContainer {...args}>
     <div>
       <span>div1</span>
@@ -37,22 +40,18 @@ const Template = (args: FlexibleContainerProps) => (
   </FlexibleContainer>
 );
 
-export const Index = Template.bind(
-  {},
-  {
-    direction: 'row',
-    spacing: 2,
-    align: 'normal',
-    justify: 'normal',
-  },
-);
-export const WithDivider = Template.bind(
-  {},
-  {
-    direction: 'row',
-    spacing: 2,
-    align: 'normal',
-    justify: 'normal',
-    divider: <div>{'/'}</div>,
-  },
-);
+export const Index = Template.bind({});
+Index.args = {
+  direction: 'row',
+  spacing: 2,
+  align: 'normal',
+  justify: 'normal',
+};
+export const WithDivider = Template.bind({});
+WithDivider.args = {
+  direction: 'row',
+  spacing: 2,
+  align: 'normal',
+  justify: 'normal',
+  divider: <div>{'/'}</div>,
+};

@@ -1,3 +1,4 @@
+import { Story } from '@storybook/react';
 import React from 'react';
 
 import Input from '@shared/ui/components/atoms/Input';
@@ -12,6 +13,7 @@ export default {
   },
 };
 
-const Template = (args: BaseInputProps) => <Input {...args} />;
+const Template: Story = (args: BaseInputProps) => <Input {...args} />;
 
-export const Index = Template.bind({}, { defaultValue: 'test' });
+export const Index = Template.bind({});
+Index.args = { defaultValue: 'test' };
