@@ -1,10 +1,11 @@
-import styled from "@emotion/styled";
-import { Property } from "csstype";
-import isPropValid from "@emotion/is-prop-valid";
-import { spacing } from "../../utils/spacing";
-import withDivider, { WithDivider } from "../../utils/withDivider";
+import isPropValid from '@emotion/is-prop-valid';
+import styled from '@emotion/styled';
+import { Property } from 'csstype';
 
-type Direction = "row" | "column";
+import { spacing } from '@shared/ui/utils/spacing';
+import withDivider, { WithDivider } from '@shared/ui/utils/withDivider';
+
+type Direction = Property.FlexDirection;
 
 export type FlexibleContainerProps = WithDivider & {
   direction?: Direction;
@@ -14,21 +15,21 @@ export type FlexibleContainerProps = WithDivider & {
   background?: Property.Background;
 };
 
-const FlexibleContainer = styled("div", {
+const FlexibleContainer = styled('div', {
   shouldForwardProp: (prop) => isPropValid(prop),
 })<FlexibleContainerProps>(
   ({
-    direction: flexDirection = "column",
+    direction: flexDirection = 'column',
     spacing: gap = 0,
     align: alignItems,
     justify: justifyContent,
   }) => ({
-    display: "flex",
+    display: 'flex',
     flexDirection,
     alignItems,
     justifyContent,
     gap: spacing(gap),
-  })
+  }),
 );
 
 export default withDivider<FlexibleContainerProps>(FlexibleContainer);
