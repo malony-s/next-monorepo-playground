@@ -1234,7 +1234,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-react-jsx@npm:^7.12.12, @babel/plugin-transform-react-jsx@npm:^7.18.6":
+"@babel/plugin-transform-react-jsx@npm:^7.12.12, @babel/plugin-transform-react-jsx@npm:^7.17.12, @babel/plugin-transform-react-jsx@npm:^7.18.6":
   version: 7.18.10
   resolution: "@babel/plugin-transform-react-jsx@npm:7.18.10"
   dependencies:
@@ -1489,7 +1489,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-react@npm:^7.12.10":
+"@babel/preset-react@npm:^7.12.10, @babel/preset-react@npm:^7.18.6":
   version: 7.18.6
   resolution: "@babel/preset-react@npm:7.18.6"
   dependencies:
@@ -1734,6 +1734,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/babel-plugin-jsx-pragmatic@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@emotion/babel-plugin-jsx-pragmatic@npm:0.2.0"
+  dependencies:
+    "@babel/plugin-syntax-jsx": ^7.17.12
+  peerDependencies:
+    "@babel/core": ^7.0.0
+  checksum: fb7a386ff1335ba09f8db5617c14b87ed844beda181fa9eaf5516328a39ec2f1cfc9d332d53b4378682a869f375f63eaeedfcb18490cd2fd19b70433ffe9487b
+  languageName: node
+  linkType: hard
+
 "@emotion/babel-plugin@npm:^11.10.0":
   version: 11.10.0
   resolution: "@emotion/babel-plugin@npm:11.10.0"
@@ -1756,6 +1767,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/babel-preset-css-prop@npm:^11.10.0":
+  version: 11.10.0
+  resolution: "@emotion/babel-preset-css-prop@npm:11.10.0"
+  dependencies:
+    "@babel/plugin-transform-react-jsx": ^7.17.12
+    "@babel/runtime": ^7.18.3
+    "@emotion/babel-plugin": ^11.10.0
+    "@emotion/babel-plugin-jsx-pragmatic": ^0.2.0
+  peerDependencies:
+    "@babel/core": ^7.0.0
+  checksum: 09d91e89ec5edf105ddcdfcbac5aa45c2c0c19213ee6fcf95fd570ca395b965022fe03a5483802e00eea2436983609cef2b2fcc88169b0a923a8e2c92411ec89
+  languageName: node
+  linkType: hard
+
 "@emotion/cache@npm:^11.10.0":
   version: 11.10.1
   resolution: "@emotion/cache@npm:11.10.1"
@@ -1766,6 +1791,15 @@ __metadata:
     "@emotion/weak-memoize": ^0.3.0
     stylis: 4.0.13
   checksum: 950203c5a447c107a189042178fdf43b2e699f579e2d7cd9f39cb99ee2b1f20d84bb1ed653d2737a1adb79756c1f747783875ee76ccb547357f5aa9cd5ce63ee
+  languageName: node
+  linkType: hard
+
+"@emotion/eslint-plugin@npm:^11.10.0":
+  version: 11.10.0
+  resolution: "@emotion/eslint-plugin@npm:11.10.0"
+  peerDependencies:
+    eslint: 6 || 7 || 8
+  checksum: b848600bbd047a5100e541369ab56ee84f7a4fae59f811b3835ba686c5b35d0c564953f946c9912d98df0e70fa5533b574f629aa10791e02bcd268263ff7adf1
   languageName: node
   linkType: hard
 
@@ -2235,6 +2269,9 @@ __metadata:
   resolution: "@shared/ui@workspace:shared/ui"
   dependencies:
     "@babel/core": ^7.18.10
+    "@babel/preset-react": ^7.18.6
+    "@emotion/babel-plugin": ^11.10.0
+    "@emotion/babel-preset-css-prop": ^11.10.0
     "@emotion/is-prop-valid": ^1.2.0
     "@emotion/react": ^11.10.0
     "@emotion/styled": ^11.10.0
@@ -2255,6 +2292,7 @@ __metadata:
     react: ^17.0.2
     react-dom: ^17.0.2
     require-from-string: ^2.0.2
+    tsconfig-paths-webpack-plugin: ^4.0.0
     webpack: ^5.74.0
   languageName: unknown
   linkType: soft
@@ -6512,7 +6550,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enhanced-resolve@npm:^5.10.0":
+"enhanced-resolve@npm:^5.10.0, enhanced-resolve@npm:^5.7.0":
   version: 5.10.0
   resolution: "enhanced-resolve@npm:5.10.0"
   dependencies:
@@ -10074,6 +10112,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "next-monorepo-playground@workspace:."
   dependencies:
+    "@emotion/eslint-plugin": ^11.10.0
     "@trivago/prettier-plugin-sort-imports": ^3.3.0
     eslint: ^8.21.0
     prettier: ^2.7.1
@@ -12712,6 +12751,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"strip-bom@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "strip-bom@npm:3.0.0"
+  checksum: 8d50ff27b7ebe5ecc78f1fe1e00fcdff7af014e73cf724b46fb81ef889eeb1015fc5184b64e81a2efe002180f3ba431bdd77e300da5c6685d702780fbf0c8d5b
+  languageName: node
+  linkType: hard
+
 "strip-eof@npm:^1.0.0":
   version: 1.0.0
   resolution: "strip-eof@npm:1.0.0"
@@ -13119,6 +13165,28 @@ __metadata:
     typescript:
       optional: true
   checksum: c2a698b85d521298fe6f2435fbf2d3dc5834b423ea25abd321805ead3f399dbeedce7ca09492d7eb005b9d2c009c6b9587055bc3ab273dc6b9e40eefd7edb5b2
+  languageName: node
+  linkType: hard
+
+"tsconfig-paths-webpack-plugin@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "tsconfig-paths-webpack-plugin@npm:4.0.0"
+  dependencies:
+    chalk: ^4.1.0
+    enhanced-resolve: ^5.7.0
+    tsconfig-paths: ^4.0.0
+  checksum: 7ff7d63c1153e6dd30ce660b006495ae5cb5cbb78b30bb59b3cb627567325d4af52c7a69dda8aec7b94d576f5385581a69307472992954c40fe6949564155397
+  languageName: node
+  linkType: hard
+
+"tsconfig-paths@npm:^4.0.0":
+  version: 4.1.0
+  resolution: "tsconfig-paths@npm:4.1.0"
+  dependencies:
+    json5: ^2.2.1
+    minimist: ^1.2.6
+    strip-bom: ^3.0.0
+  checksum: e4b101f81b2abd95499d8145e0aa73144e857c2c359191058486cef101b7accae22a69114e5d5814a13d5ab3b0bae70dd0c85bcdb7e829bbe1bfda5c9067c9b1
   languageName: node
   linkType: hard
 
