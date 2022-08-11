@@ -1,5 +1,5 @@
 import isPropValid from '@emotion/is-prop-valid';
-import styled from '@emotion/styled';
+import styled, { CSSObject } from '@emotion/styled';
 import { Property } from 'csstype';
 
 import { spacing } from '@shared/ui/utils/spacing';
@@ -13,6 +13,7 @@ export type FlexibleContainerProps = WithDivider & {
   align?: Property.AlignItems;
   justify?: Property.JustifyContent;
   background?: Property.Background;
+  css?: CSSObject;
 };
 
 const FlexibleContainer = styled('div', {
@@ -31,5 +32,6 @@ const FlexibleContainer = styled('div', {
     gap: spacing(gap),
   }),
 );
-
-export default withDivider<FlexibleContainerProps>(FlexibleContainer);
+const WithDividerFlexibleContainer =
+  withDivider<FlexibleContainerProps>(FlexibleContainer);
+export default WithDividerFlexibleContainer;

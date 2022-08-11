@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import React, { PropsWithChildren } from 'react';
 
 export type WithDivider = { divider?: JSX.Element };
 
@@ -7,7 +7,7 @@ const withDivider =
   ({ divider, children, ...others }: PropsWithChildren<T>) => {
     const count = React.Children.count(children);
     const Dividers = divider
-      ? new Array(count - 1).fill("").map(() => React.cloneElement(divider))
+      ? new Array(count - 1).fill('').map(() => React.cloneElement(divider))
       : [];
     const childrenArray = React.Children.toArray(children);
     Dividers.forEach((v, i) => {
@@ -15,8 +15,8 @@ const withDivider =
         i * 2 + 1,
         0,
         React.cloneElement(v, {
-          key: v.type + "divider" + i,
-        })
+          key: v.type + 'divider' + i,
+        }),
       );
     });
 

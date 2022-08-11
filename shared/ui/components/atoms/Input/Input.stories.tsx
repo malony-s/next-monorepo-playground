@@ -1,4 +1,5 @@
 import { Story } from '@storybook/react';
+
 import React from 'react';
 
 import Input from '@shared/ui/components/atoms/Input';
