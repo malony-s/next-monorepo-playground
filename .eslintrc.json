@@ -1,0 +1,17 @@
+{
+  "root": true,
+  "extends": ["eslint:recommended"],
+  "plugins": ["@emotion", "prettier"],
+  "parserOptions": {
+    "project": ["./tsconfig.base.json"]
+  },
+  "rules": {
+    "@emotion/jsx-import": "error",
+    "@emotion/no-vanilla": "error",
+    "@emotion/import-from-emotion": "error",
+    "@emotion/styled-import": "error"
+  },
+  "env": {
+    "es6": true
+  }
+}
