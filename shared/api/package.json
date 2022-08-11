@@ -2,7 +2,10 @@
   "name": "@shared/api",
   "packageManager": "yarn@3.2.1",
   "scripts": {
-    "example": "scripts/gen.js https://petstore.swagger.io/v2/swagger.json",
+    "example": "scripts/gen.js https://petstore.swagger.io/v2/swagger.json petStore",
     "open-api": "scripts/gen.js"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
   }
 }
