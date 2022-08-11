@@ -18,10 +18,7 @@
     "jsxImportSource": "@emotion/react",
     "baseUrl": ".",
     "paths": {
-      "@shared/ui/components/*": ["components/*"],
-      "@shared/ui/contexts/*": ["contexts/*"],
-      "@shared/ui/hooks/*": ["hooks/*"],
-      "@shared/ui/utils/*": ["utils/*"]
+      "@shared/ui/*": ["src/*"],
     }
   },
   "include": ["./**/*.ts", "./**/*.tsx"],

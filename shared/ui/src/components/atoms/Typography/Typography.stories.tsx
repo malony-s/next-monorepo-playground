@@ -1,8 +1,8 @@
-import React, { useMemo } from 'react';
-
 import Typography, {
   TypographyVariants,
-} from '@shared/ui/components/atoms/Typography';
+} from 'src/components/atoms/Typography';
+
+import React, { useMemo } from 'react';
 
 export default {
   title: 'Atoms/Typography',

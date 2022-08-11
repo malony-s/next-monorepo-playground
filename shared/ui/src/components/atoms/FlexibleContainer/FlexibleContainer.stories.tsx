@@ -1,10 +1,9 @@
 import { Story } from '@storybook/react';
-
-import React from 'react';
-
 import FlexibleContainer, {
   FlexibleContainerProps,
-} from '@shared/ui/components/atoms/FlexibleContainer';
+} from 'src/components/atoms/FlexibleContainer';
+
+import React from 'react';
 
 export default {
   title: 'Atoms/Container',

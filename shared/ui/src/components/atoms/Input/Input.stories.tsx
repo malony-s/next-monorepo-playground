@@ -1,8 +1,7 @@
 import { Story } from '@storybook/react';
+import Input from 'src/components/atoms/Input';
 
 import React from 'react';
-
-import Input from '@shared/ui/components/atoms/Input';
 
 import { BaseInputProps } from './styled.component';
 
