@@ -10,8 +10,18 @@
 # tmp
 **/tmp
 
-# # next
+# next
 **/.next
 **/.swc/
-# # node_modules
+# node_modules
 **/node_modules
+
+# testing
+**/coverage
+
+# vercel
+**/.vercel
+
+# typescript
+**/*.tsbuildinfo
+**/next-env.d.ts

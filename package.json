@@ -10,6 +10,7 @@
   "license": "MIT",
   "packageManager": "yarn@3.2.2",
   "scripts": {
+    "app": "yarn workspace @apps/app",
     "api": "yarn workspace @shared/api",
     "ui": "yarn workspace @shared/ui"
   },

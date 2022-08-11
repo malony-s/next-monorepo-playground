@@ -16,7 +16,7 @@ module.exports = {
   proseWrap: 'preserve',
   vueIndentScriptAndStyle: false,
   plugins: [require.resolve('@trivago/prettier-plugin-sort-imports')],
-  importOrder: ['react', '^next/(.*)$', '^@shared/(.*)$', '^[~]', '^[./]'],
+  importOrder: ['^react', '^next/(.*)$', '^@shared/(.*)$', '^[~]', '^[./]'],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
   importOrderCaseInsensitive: true,

@@ -6,12 +6,13 @@
     "project": ["./tsconfig.base.json"]
   },
   "rules": {
-    "@emotion/jsx-import": "error",
+    "@emotion/jsx-import": "off",
     "@emotion/no-vanilla": "error",
     "@emotion/import-from-emotion": "error",
     "@emotion/styled-import": "error"
   },
   "env": {
     "es6": true
-  }
+  },
+  "ignorePatterns": ["**/scripts/*"]
 }
