@@ -1,6 +1,8 @@
 import { GraphQLString } from 'graphql/type';
 
-import { Pet } from '@shared/api';
+import { Pet, PetApi } from '@shared/api/petStore';
+
+const api = new PetApi();
 
 const Pets = {
   // type: Test,
@@ -8,8 +10,9 @@ const Pets = {
     name: { type: GraphQLString },
   },
   // root, args, context, info
-  resolve: (root: void, args: ''): Array<Pet> => {
-    return api;
+  resolve: async (): Promise<Array<Pet>> => {
+    const { data } = await api.findPetsByStatus(['available']);
+    return data;
   },
 };
 

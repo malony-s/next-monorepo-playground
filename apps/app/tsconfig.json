@@ -1,4 +1,5 @@
 {
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -21,9 +22,9 @@
       "~/pages/*": ["pages/*"],
       "~/screens/*": ["screens/*"],
       "@shared/ui/*": ["../../../shared/ui/src/*"],
-      "@shared/api/*": ["../../../shared/api/src/*"],
+      "@shared/api/*": ["../../../shared/api/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", "./next.config.js"]
+  "exclude": ["node_modules"]
 }
