@@ -3,5 +3,10 @@
   "env": {
     "es6": true
   },
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "tsconfigRootDir": ".",
+    "sourceType": "module"
+  },
   "ignorePatterns": ["next.config.js"]
 }
