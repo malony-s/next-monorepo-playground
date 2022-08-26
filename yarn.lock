@@ -26,7 +26,6 @@ __metadata:
     "@emotion/styled": ^11.10.0
     "@graphql-yoga/node": ^2.13.6
     "@next/eslint-plugin-next": ^12.2.4
-    "@shared/ui": "workspace:shared/ui"
     "@trivago/prettier-plugin-sort-imports": ^3.3.0
     "@types/node": 18.7.1
     "@types/react": 18.0.17
@@ -2618,9 +2617,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@shared/store@workspace:shared/store":
+"@shared/store@workspace:shared/cache-store":
   version: 0.0.0-use.local
-  resolution: "@shared/store@workspace:shared/store"
+  resolution: "@shared/store@workspace:shared/cache-store"
+  dependencies:
+    "@types/react": ^18.0.17
   languageName: unknown
   linkType: soft
 
