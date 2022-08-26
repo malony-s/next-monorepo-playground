@@ -1,8 +1,7 @@
 import isPropValid from '@emotion/is-prop-valid';
+import { SerializedStyles } from '@emotion/react';
 import styled from '@emotion/styled';
-import { Property } from 'csstype';
 
-import { css, SerializedStyles } from '@emotion/react';
 import { PropsWithChildren } from 'react';
 
 type TypographyPrefix = 'h' | 'subtitle' | 'body';
