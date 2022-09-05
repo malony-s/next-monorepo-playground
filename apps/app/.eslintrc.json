@@ -1,12 +1,23 @@
 {
   "extends": ["next/core-web-vitals"],
   "env": {
-    "es6": true
+    "browser": true,
+    "node": true,
+    "es2020": true
   },
   "parserOptions": {
-    "project": "tsconfig.json",
-    "tsconfigRootDir": ".",
-    "sourceType": "module"
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": { 
+      "jsx": true
+    },
+    "project": ["**/tsconfig.json"],
+    "tsconfigRootDir": "."
   },
-  "ignorePatterns": ["next.config.js"]
+  "ignorePatterns": ["next.config.js"],
+  "settings": {
+    "next": {
+      "rootDir": "apps/app/"
+    }
+  }
 }
