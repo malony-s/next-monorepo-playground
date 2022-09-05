@@ -21,6 +21,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.18.10
     "@emotion/babel-plugin": ^11.10.0
+    "@emotion/cache": ^11.10.3
     "@emotion/is-prop-valid": ^1.2.0
     "@emotion/react": ^11.10.0
     "@emotion/styled": ^11.10.0
@@ -1830,6 +1831,19 @@ __metadata:
     "@emotion/weak-memoize": ^0.3.0
     stylis: 4.0.13
   checksum: 950203c5a447c107a189042178fdf43b2e699f579e2d7cd9f39cb99ee2b1f20d84bb1ed653d2737a1adb79756c1f747783875ee76ccb547357f5aa9cd5ce63ee
+  languageName: node
+  linkType: hard
+
+"@emotion/cache@npm:^11.10.3":
+  version: 11.10.3
+  resolution: "@emotion/cache@npm:11.10.3"
+  dependencies:
+    "@emotion/memoize": ^0.8.0
+    "@emotion/sheet": ^1.2.0
+    "@emotion/utils": ^1.2.0
+    "@emotion/weak-memoize": ^0.3.0
+    stylis: 4.0.13
+  checksum: d31291eff1b270d8db6f471b2b9b3bc5d786c296838631f101837747ff5afa8e8890655279457c68ce2cee23256ab02a25c177f5487b5061da82c7354c1bdce5
   languageName: node
   linkType: hard
 
