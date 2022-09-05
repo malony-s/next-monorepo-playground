@@ -7,6 +7,9 @@ const withTM = require('next-transpile-modules')([]);
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  compiler: {
+    emotion: true,
+  },
   /*
     현재 standalone 적용 시, outputFileTracingRoot과 PnP와 연동이 제대로 되지 않는문제 존재
     해당 issue 해결되기 전까지 .yarnrc.yml nodeLinker: node-modules로 설정한다.
