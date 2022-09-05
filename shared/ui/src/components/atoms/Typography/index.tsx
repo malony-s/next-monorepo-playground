@@ -97,13 +97,15 @@ type BaseTypogrpahyProp = {
 const BaseTypography = styled('p', {
   shouldForwardProp: (prop) => isPropValid(prop),
 })<BaseTypogrpahyProp>(
-  ({ fontSize, fontWeight, letterSpacing, button = false }) => ({
-    margin: 0,
-    padding: 0,
-    fontFamily: 'Roboto, Noto Sans Kr',
-    fontSize: `${fontSize}em`,
-    fontWeight,
-    letterSpacing,
-    textTransform: button ? 'uppercase' : 'inherit',
-  }),
+  ({ fontSize, fontWeight, letterSpacing, button = false }) => {
+    return {
+      margin: 0,
+      padding: 0,
+      fontFamily: 'inherit',
+      fontSize: `${fontSize}em`,
+      fontWeight,
+      letterSpacing,
+      textTransform: button ? 'uppercase' : 'inherit',
+    };
+  },
 );
